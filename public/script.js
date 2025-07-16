@@ -43,7 +43,7 @@ form.addEventListener('submit', async (e) => {
   }
 
   try {
-    const res = await fetch('/data/register', {
+    const res = await fetch('/api/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, number })
@@ -66,7 +66,7 @@ form.addEventListener('submit', async (e) => {
 
 async function loadUsers() {
   try {
-    const res = await fetch('/data/users');
+    const res = await fetch('/api/users');
     const users = await res.json();
     updateCounts(users);
   } catch {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuckyMd💨 Registration</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 WhatsApp Number Registration</h1>
+    <p>Target: <strong>1000</strong> numbers</p>
+    <p>Registered: <span id="registered">0</span></p>
+    <p>Remaining: <span id="remaining">1000</span></p>
+
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="tel" id="number" placeholder="Enter WhatsApp number" required>
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="message"></div>
+    <div id="download" style="display: none;">
+      <p>✅ Registration complete. Click to download VCF:</p>
+      <a id="downloadBtn" href="#" download="LuckyMd_Contacts.vcf">📥 Download VCF File</a>
+    </div>
+    <div id="full" style="display: none;">
+      <h2>🚫 Registration Full!</h2>
+      <p>Please wait for the file in our groups and channel.</p>
+    </div>
+  </div>
+  <!-- ... content ya form unchanged ... -->
+
+<footer style="margin-top: 30px; text-align: center;">
+  <small>&copy; 2025 LuckyMd💨 | <a href="admin.html">All right reserved</a></small>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - LuckyMd💨</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 Admin Login</h2>
+    <div id="loginBox">
+      <input type="text" id="adminUser" placeholder="Username">
+      <input type="password" id="adminPass" placeholder="Password">
+      <button onclick="loginAdmin()">Login</button>
+      <p id="adminMessage"></p>
+    </div>
+
+    <div id="adminPanel" style="display:none;">
+      <h2>📊 Dashboard</h2>
+      <p><strong>Total Registered:</strong> <span id="adminRegistered">0</span></p>
+      <p><strong>Remaining:</strong> <span id="adminRemaining">1000</span></p>
+      <h3>📞 Registered Numbers:</h3>
+      <ul id="numberList"></ul>
+      <a id="adminDownloadBtn" href="#" download="LuckyMd_Contacts.vcf">📥 Download VCF File</a>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

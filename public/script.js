@@ -10,12 +10,12 @@ const downloadBtn = document.getElementById('downloadBtn');
 
 function updateCounts(users) {
   const registered = users.length;
-  const remaining = 1000 - registered;
+  const remaining = 500 - registered;
 
   registeredSpan.textContent = registered;
   remainingSpan.textContent = remaining;
 
-  if (registered >= 1000) {
+  if (registered >= 500) {
     form.style.display = 'none';
     fullSection.style.display = 'block';
     generateVCF(users);

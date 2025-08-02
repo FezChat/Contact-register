@@ -26,7 +26,7 @@ function updateCounts(users) {
 function generateVCF(users) {
   let vcfData = '';
   users.forEach(u => {
-    vcfData += `BEGIN:VCARD\nVERSION:3.0\nFN:${u.name} LuckyMd💨\nTEL;TYPE=CELL:+${u.number}\nEND:VCARD\n`;
+    vcfData += `BEGIN:VCARD\nVERSION:3.0\nFN:${u.name}💦\nTEL;TYPE=CELL:+${u.number}\nEND:VCARD\n`;
   });
   const blob = new Blob([vcfData], { type: 'text/vcard' });
   downloadBtn.href = URL.createObjectURL(blob);

@@ -28,19 +28,19 @@ async function loadAdminData() {
     const downloadBtn = document.getElementById('adminDownloadBtn');
 
     adminRegistered.textContent = users.length;
-    adminRemaining.textContent = 1000 - users.length;
+    adminRemaining.textContent = 500 - users.length;
 
     list.innerHTML = '';
     users.forEach(u => {
       const li = document.createElement('li');
-      li.textContent = `${u.name} LuckyMd💨 - ${u.number}`;
+      li.textContent = `${u.name} 💦 - ${u.number}`;
       list.appendChild(li);
     });
 
     // Generate VCF
     let vcfData = '';
     users.forEach(u => {
-      vcfData += `BEGIN:VCARD\nVERSION:3.0\nFN:LuckyMd💨 ${u.name}\nTEL;TYPE=CELL:+${u.number}\nEND:VCARD\n`;
+      vcfData += `BEGIN:VCARD\nVERSION:3.0\nFN:💦 ${u.name}\nTEL;TYPE=CELL:+${u.number}\nEND:VCARD\n`;
     });
 
     const blob = new Blob([vcfData], { type: 'text/vcard' });

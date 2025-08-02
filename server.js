@@ -28,7 +28,7 @@ app.post('/api/register', (req, res) => {
     return res.status(409).json({ error: "Number already exists" });
   }
 
-  if (users.length >= 1000) {
+  if (users.length >= 500) {
     return res.status(403).json({ error: "Registration is full" });
   }
 
